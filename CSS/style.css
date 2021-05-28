@@ -159,16 +159,83 @@ header{
 	list-style-type: none;
 }
 .intro-content-info ul li{
+	padding: 10px;
 	margin: 10px;
 }
 
 .intro-content-employee{
+	padding: 10px;
 	flex: 20%;
 }
 
+.intro-content-employee ul{
+	list-style-type: none;
+}
+
+.intro-content-employee ul li{
+	padding: 10px;
+	margin: 10px;
+}
+
 .intro-content-founder{
+	padding: 10px;
 	flex: 60%;
 }
+
+.founder-table{
+	display: flex;
+}
+
+.founder-content{
+	flex: 25%;
+}
+
+.founder-content button{
+	display: absolute;
+	float: right;
+	padding: 10px;
+	border: none;
+	background-color: #fff;
+	border-bottom: 2px solid #1c4057;
+}
+
+.founder-content button a{
+	border-radius: 5px;
+	padding: 10px;
+	text-decoration: none;
+	color: #1c4057;
+}
+
+.founder-content button:hover{
+	border: none;
+}
+
+.founder-content button a:hover{
+	background-color: #0d466b;
+	color: #fff;
+}
+
+.founder-img img{
+	width: 70%;
+	display: block;
+	border-radius: 20px 20px 0 0;
+}
+
+.founder-info{
+	padding: 20px 10px;
+}
+
+.fouder-info h3{
+	font-size: 24px;
+	margin: 10px 0 15px 0;
+}
+
+.founder-info p{
+	color: #a0a0a0;
+	font-size: 16px;
+	line-height: 30px;
+}
+
 
 @media screen and (max-width: 460px){
 	.container{
