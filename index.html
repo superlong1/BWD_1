@@ -6,8 +6,8 @@
 	<title>Noice</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
 </head>
 <body>
 	<header>
@@ -43,7 +43,7 @@
 			</nav>
 		</div>
 	</header>
-	<div class="container" style="background:url('Images/wash2.svg') top right no-repeat; background-color: #cdf7f7;">
+	<div class="containerr" style="background:url('Images/wash2.svg') top right no-repeat; background-color: #cdf7f7;">
 		<div class="addMenu">
 			<nav class="navi hide" id="navi">
 			<span class="close-icon" onclick="showMenu()"><i class="fas fa-user-nurse"></i></span>
@@ -134,7 +134,7 @@
 							<img src="Images/doctor.png">
 						</div>
 						<div class="founder-info">
-							<h3>Nguyễn Ngọc Ánh</h3>
+							<h3>Nguyễn N. Ánh</h3>
 							<p>CEO<br>Thần pr, pr chưa trượt lần nào</p>
 						</div>
 						<button><a target="_blank" href="https://www.facebook.com/profileofme">Tìm hiểu thêm</a></button>
@@ -165,6 +165,62 @@
 			</div>
 		</div>
 	</div>
+
+	<!--Satifitis part-->
+	<div class="statistic" style="background-color: #cdf7f7;">
+		<div class="statistic-container">
+			<div class="statistic-text">Thống kê các ca mắc covid ngày: <div id="timeShow"></div>
+			<div class="text-statistic">
+				<p>Hôm nay việt Nam ghi nhận thêm xxx ca mắc mới, nâng tổng ca mắc cả nước lên nnn ca. Chi tiết các ca mắc</p>
+			</div>
+		</div>
+			<div class="statistic-chart">
+				<!--Display the first chart-->
+				<div class="chart-display">
+					<div id="chart" style="margin-top: 30px;"></div>
+				</div>
+				<div class="chart-title">Việt Nam ngày: <div id="timeShow1"></div>
+				</div>
+			</div>
+			<div class="statistic-chart">
+				<!--Display chart 2-->
+				<div class="chart-display">
+					<div id="chart1" style="margin-top: 30px;"></div>
+				</div>
+				<div class="chart-title">Thế giới ngày: <div id="timeShow2"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="footer-table">
+			<div class="social-icon">
+					<p>Put some interesting icon here</p>
+			</div>
+			<div class="related-link">
+					<p style="font-size: 1.5rem; margin-bottom: 20px;">Đối tác</p><br>
+					<div>
+						<p>CTY TNHH TRUTHINFO</p>
+						<p>CTY TNHH ADVENGER</p>
+						<p>CTY TNHH FRESH</p>
+						<p>CTY TNHH TPS BAUM</p>
+					</div>
+					<div>
+						<a href="">www.tps.medi</a><br>
+						<a href="">www.advenger.adv</a><br>
+						<a href="">www.fresh.ve</a><br>
+						<a href="">www.baum.de</a>
+					</div>
+			</div>
+			<div class="something-else">
+					<p>else</p>
+			</div>
+		</div>
+		<div class="copyright">
+			<p>Bản quyền thuộc về Black Order Team &copy2021</p>
+			</div>
+	</footer>
+	<script src="https://www.gstatic.com/charts/loader.js"></script>
 	<script src="JS/myScript.js"></script>
 </body>
 </html>

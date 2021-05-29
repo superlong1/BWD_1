@@ -17,7 +17,7 @@ header{
 
 .navi{
 	display: inline-block;
-	margin: 20px;
+	margin: 10px;
 	padding: 10px;
 	width: 65%;
 	border-radius: 5px;
@@ -45,12 +45,12 @@ header{
 	border-radius: 5px;
 }
 
-.container{
+.containerr{
 	padding: 20px;
 	margin: 10px;
 	height: 800px;
 }
-
+/*Five K display part*/
 .fiveK{
 	border: 2px solid #323ea8;
 	width: 200px;
@@ -78,12 +78,11 @@ header{
 	padding: 1px;
 	height: 90px;
 	margin: 5px;
-	width: 55%;
+	width: 70%;
 }
 
 .close-icon i{
 	font-size: 40px;
-	margin-left: 1px;
 	float: left;
 	cursor: pointer;
 }
@@ -96,7 +95,6 @@ header{
 	font-size: 40px;
 	display: inline-block;
 	margin-right: 25px;
-	margin-top: 30px;
 	cursor: pointer;
 }
 
@@ -136,7 +134,10 @@ header{
 	font-weight: 600;
 	font-size: 20px;
 }
-
+/*
+	CSS for the introdution part, includes: ;
+	the title, divide div into 3 parts
+*/
 .intro{
 	margin: 10px;
 	padding: 10px;
@@ -235,29 +236,113 @@ header{
 	font-size: 16px;
 	line-height: 30px;
 }
+/*
+	CSS for the statistic and chart
+*/
+.statistic{
+	margin: 10px;
+	padding: 10px;
+}
 
+.statistic-container{
+	display: flex;
+}
 
+.statistic-text{
+	flex: 40%;
+}
+
+.statistic-chart{
+	flex: 30%;
+}
+
+.chart-display{
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+}
+
+.chart-title{
+	padding: 10px;
+	display: flex;
+	margin-left: 130px;
+}
+/*
+	CSS for footer
+*/
+.footer{
+	padding: 10px;
+	margin: 10px;
+	height: 200px;
+	background-color: #a0a0a0;
+}
+
+.footer-table{
+	display: flex;
+}
+
+.social-icon{
+	flex: 20%;
+	margin: 10px;
+}
+
+.related-link{
+	flex: 30%;
+	margin: 10px;
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.related-link a{
+	text-decoration: none;
+	color: #cdf7f7;
+}
+
+.related-link a:hover{
+	border-bottom: 1px solid #000;
+}
+
+.something-else{
+	flex: 50%;
+	margin: 10px;
+}
+
+.copyright{
+	margin: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/*
+	responsive for the small screen devices
+*/
 @media screen and (max-width: 460px){
-	.container{
+	*{
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	.containerr{
 		padding: 30px;
-		margin-top: 30px;
+		margin-top: 100px;
 		margin-left: -20px;
 		color: #4d4a46;
+		width: 740px;
 	}
 
 	.fiveK{
 	border: 2px solid #323ea8;
-	width: 200px;
+	width: 250px;
 	padding: 10px;
-	margin: 10px;
 	box-shadow: 1px 1px 1px 1px #323ea8;
 	background-color: #aaf2f1;
 	}
 
 	.box{
-	padding: 10px;
-	margin-left: 100px;
-	width: 70%;
+	margin-left: 300px;
+	width: 50%;
+	padding: 20px;
+	height: 40%;
 	border: 2px solid #323ea8;
 	box-shadow: 1px 1px 1px 1px #323ea8;
 	background-color: #aaf2f1;
@@ -269,14 +354,54 @@ header{
 	width: 100%;
 	}
 
-}
+	.intro{
+	margin: 10px;
+	padding: 10px;
+	width: 700px;
+	}
 
+	.intro-title{
+	font-size: 32px;
+	font-weight: 600;
+	}
+
+	.intro-content{
+		display: grid;
+		grid-template-columns: 50% 50%;
+	}
+
+	.intro-content-founder{
+		width: 700px;
+	}
+
+	.founder-content button:hover{
+	border: none;
+	}	
+
+	.founder-content button a:hover{
+	background-color: #0d466b;
+	color: #fff;
+	}
+
+	.founder-img img{
+	width: 70%;
+	display: block;
+	border-radius: 20px 20px 0 0;
+	}
+
+	.founder-info p{
+	display: none;
+	}
+}
+/*
+	Responsive for the big screen devices
+*/
 @media screen and (min-width: 460px) and (max-width:1024px){
-	.container{
+	.containerr{
 		padding: 30px;
-		margin-top: 30px;
-		margin-left: -20px;
+		margin: 20px;
 		color: #4d4a46;
+		width: 980px;
 	}
 
 	.fiveK{
@@ -291,7 +416,7 @@ header{
 	.box{
 	padding: 10px;
 	margin-left: 100px;
-	width: 70%;
+	width: 40%;
 	border: 2px solid #323ea8;
 	box-shadow: 1px 1px 1px 1px #323ea8;
 	background-color: #aaf2f1;
