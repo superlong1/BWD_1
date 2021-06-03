@@ -142,7 +142,7 @@ header{
 */
 .intro{
 	margin: 10px;
-	padding: 10px;
+	padding: 20px;
 }
 
 .intro-title{
@@ -191,6 +191,8 @@ header{
 
 .founder-content{
 	flex: 25%;
+	display: absolute;
+	align-items: center;
 }
 
 .founder-content button{
@@ -221,7 +223,6 @@ header{
 .founder-img img{
 	width: 70%;
 	display: block;
-	border-radius: 20px 20px 0 0;
 }
 
 .founder-info{
@@ -360,6 +361,103 @@ header{
 	align-items: center;
 	justify-content: center;
 }
+
+/*
+	For the additional infomation.
+*/
+
+.add-info{
+	padding: 20px;
+	margin: 10px;
+}
+
+.add-ske{
+	display: flex;
+}
+
+.add-left-side{
+	flex: 80%;
+}
+
+.add-right-side{
+	flex: 20%;
+	margin: 10px;
+	padding: 10px;
+	border-left: 1px solid #000;
+}
+
+.add-right-side h3{
+	border-bottom: 2px solid #328da8;
+}
+
+.add-right-side ul {
+	list-style-type: none;
+	margin: 10px;
+}
+
+.add-right-side ul li{
+	padding: 5px;
+}
+
+.add-right-side ul li a{
+	color: #000;
+	text-decoration: none;
+}
+
+.add-right-side ul li a:hover{
+	border-bottom: 1px solid #328da8;
+}
+
+.add-left-side{
+	display: grid;
+	grid-template-rows: 50px 200px;
+}
+
+.add-left-side .add-left-side-top{
+	display: flex;
+	align-items: center;
+}
+
+.add-left-side .add-left-side-top span{
+	font-size: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.add-left-side .add-left-side-top span:hover{
+	color: #29a9cf;
+	cursor: pointer;
+}
+
+.add-left-side .add-left-side-top .add-left-link a{
+	text-decoration: none;
+	padding: 10px;
+}
+
+.add-left-side .add-left-side-top .add-left-link a:first-child{
+	background-color: #29a9cf;
+	border-radius: 5px;
+}
+
+.add-left-side .add-left-side-top .add-left-link a:hover{
+	border-radius: 5px;
+	background-color: #29a9cf;
+	cursor: pointer;
+}
+.add-left-side-bot{
+	display: grid;
+	grid-template-columns: 30% 70%;
+}
+
+.add-left-side-bot{
+	margin: 10px;
+}
+
+.add-left-side-bot .add-image img{
+	width: 70%;
+	display: block;
+}
+
 /*
 	responsive for the small screen devices
 */
