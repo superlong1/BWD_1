@@ -11,12 +11,14 @@ function showMenu () {
 	icon.setAttribute("style" , "display:block;");
 	navi.classList.add("hide");
 }
-
+/*For time*/
 	let today = new Date();
 	let date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
 	document.getElementById("timeShow").innerHTML = "Hôm nay, " + date;
 	document.getElementById("timeShow1").innerHTML = date;
 	document.getElementById("timeShow2").innerHTML = date;
+  document.getElementById("dateShow").innerHTML = date;
+/**********************************************************/
 
 /*Chart*/
 
@@ -53,3 +55,6 @@ function drawChart1() {
   var chart = new google.visualization.PieChart(document.getElementById('chart1'));
   chart.draw(data, options);
 }
+
+/*display time*/
+
