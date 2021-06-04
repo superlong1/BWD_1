@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Thông tin</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #e9d8f4;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 10px;
+  text-align: center;
+  background: white;
+  color: #58257b;
+}
+.header h1 {
+  font-size: 40px;
+}
+
+.header p {
+  font-size: 20px;
+}
+/* Định dạng navigation bar */
+.navbar {
+  display: flex;
+  background-color: purple;
+}
+
+/* Định dạng link điều hướng */
+.navbar a {
+  color: #f2f2f2;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Thay đổi màu liên kết khi di chuột qua */
+.navbar a:hover {
+  background-color: #db7093;
+  color: white;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+/* Cột chính */
+.main {
+  flex: 100%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Hình ảnh tượng trưng */
+.fakeimg {
+  background-color: #baa1cc;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: white;
+  margin-top: 10px;
+}
+div.gallery{
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  /* width: 300px; */
+  border-radius: 10px;
+}
+div.gallery:hover{
+  border: 2px solid #777;
+}
+
+div.gallery img{
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+div.disc {
+  padding: 15px;
+  text-align: center; 
+}
+div.disc span a {
+  text-decoration:  none;
+}
+
+div.linkface{
+  text-decoration: none;
+  text-align:  center;
+
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+@media only screen and (max-width: 700px){
+  .responsive{
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+@media only screen and (max-width: 500px){
+  .responsive{
+    width: 100%;
+  }
+}
+
+.clearfix:after{
+  content:"";
+  clear: both;
+  display: table;
+}
+
+
+/* Bố cục linh hoạt: các cột xếp chồng lên nhau thay vì cạnh nhau khi màn hình 
+có chiều rộng dưới 600px */
+@media screen and (max-width: 600px) {
+  .row, .navbar {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>COVID TODAY</h1>
+  <p>NHANH CHỐNG - TIỆN LỢI - RÕ RÀNG</p>
+</div>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="#">TIN TỨC</a>
+  <a href="#">THÔNG TIN</a>
+  <a href="#">KHOA HỌC</a>
+  <a href="#">SỰ KIỆN</a>
+</div>
+
+<!-- Nội dung -->
+  <div class="responsive">
+    <div class="gallery">
+      <a href="images/anh1.jpg">
+        <img src="images/anh1.jpg" width="170" height="170">
+      </a>
+      <div class="disc"> <span><a target="_blank" href="https://www.facebook.com/profileofme">Nguyễn Ngọc Ánh:</a></span> Chuyên gia nghiên cứu thị trường Covid-19 </div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a href="images/long1.jpg">
+        <img src="images/long1.jpg" width="170" height="170">
+      </a>
+     <div class="disc"> <span><a target="_blank" href="https://www.facebook.com/profile.php?id=100041602174887">Lê Văn Long:</a></span> Chuyên gia nghiên cứu phương pháp trị liệu Covid-19 </div>
+    </div>  
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a href="images/binh1.jpg">
+        <img src="images/binh1.jpg" width="170" height="170">
+      </a>
+     <div class="disc">  <span><a target="_blank" href="https://www.facebook.com/winter.soldiers.10690">Lê Thái Bình</a></span> Chuyên Gia Đưa ra những số liệu thống kê Covid-19 </div>
+    </div>  
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a href="images/tu1.jpg" >
+      <img src="images/tu1.jpg" width="170" height="170">
+      </a>
+      <div class="disc"> <span><a target="_blank" href="https://www.facebook.com/profile.php?id=100004985657894">Hoàng Anh Tú:</a></span> Người bảo đảm sự uy tính của nội dung được chia sẻ </div>    </div>
+  </div>
+
+  <div class="clearfix"></div>
+  <!--Nội dung responsive -->
+
+  <div class="main">
+    <h2>GIỚI THIỆU CHUNG VỀ TRANG WEB</h2>
+    <h5>ĐÀ NẴNG, 03/06/2021</h5>
+    <div> <img src="images/backgroundcovid.jpg" width="100%" height="400" alt=""> </div>
+   <!--  <p>Form là một phần không thể thiếu trong bất kì loại website nào.</p>
+    <p>Ở bài viết này, Quantrimang.com sẽ hướng dẫn bạn cách xây dựng phần 
+    giao diện hiển thị của một biểu mẫu cơ bản. Giao diện này có thể được làm 
+    khá đẹp mắt với CSS</p> -->
+    <br>
+    <h2>MỤC TIÊU CỦA CHÚNG TÔI</h2>
+<!--     <h5>Quách Tỉnh, 14/02/2019</h5>
+    <div class="fakeimg" style="height:200px;">Ảnh</div>
+ --> 
+  <h4 style="color: #3c4245; font-size: 20px;"> 1. Tin cậy để phục vụ sức khỏe cộng đồng mọi lúc </h4> 
+    <ul style="margin-top:-15px;">
+      <li>Chúng tôi đặt lợi ích sức khỏe của mọi người lên hàng đầu</li>
+      <li> Các hành động và đề xuất của chúng tôi là độc lập </li>
+      <li>Các quyết định của chúng tôi là công bằng, minh bạch và kịp thời</li>
+    </ul>
+
+  <h4 style="color: #3c4245; font-size: 20px;"> 2. Các chuyên gia cam kết mang lại sức khỏe xuất sắc </h4> 
+    <ul style="margin-top:-15px;">
+      <li>Chúng tôi đề cao các tiêu chuẩn chuyên nghiệp cao nhất trên tất cả các vai trò và chuyên môn</li>
+      <li>Chúng tôi được hướng dẫn bởi khoa học, bằng chứng và chuyên môn kỹ thuật tốt nhất hiện có</li>
+      <li>Chúng tôi liên tục phát triển bản thân và đổi mới để đáp ứng với một thế giới đang thay đổi</li>
+    </ul>
+
+  <h4 style="color: #3c4245; font-size: 20px;"> 3. Người chính trực</h4> 
+    <ul style="margin-top:-15px;">
+      <li>Chúng tôi thực hành những lời khuyên mà chúng tôi đưa ra cho thế giới</li>
+      <li>Chúng tôi tương tác với mọi người một cách trung thực và thiện chí</li>
+      <li>Chúng ta tự cho mình và những người khác phải chịu trách nhiệm về lời nói và hành động</li>
+    </ul>
+
+  <h4 style="color: #3c4245; font-size: 20px;"> 4. Đồng nghiệp cộng tác và đối tác</h4> 
+    <ul style="margin-top:-15px;">
+      <li>Chúng tôi tham gia với các đồng nghiệp và đối tác để tăng cường tác động ở cấp quốc gia</li>
+      <li>Chúng tôi nhận ra và sử dụng sức mạnh của sự đa dạng để cùng nhau đạt được nhiều hơn</li>
+      <li>Chúng tôi giao tiếp cởi mở với mọi người và học hỏi lẫn nhau</li>
+    </ul>
+
+  <h4 style="color: #3c4245; font-size: 20px;"> 5.Mọi người quan tâm đến mọi người</h4> 
+    <ul style="margin-top:-15px;">
+      <li>Chúng tôi can đảm và vị tha bảo vệ quyền được khỏe mạnh của mọi người</li>
+      <li>Chúng tôi thể hiện lòng từ bi đối với tất cả con người và thúc đẩy các phương pháp tiếp cận bền vững đối với sức khỏe</li>
+      <li>Chúng tôi cố gắng làm cho mọi người cảm thấy an toàn, được tôn trọng, được trao quyền, được đối xử công bằng và được công nhận hợp lệ</li>
+    </ul>
+
+  <hr style="color: 4px solid grey;">
+   <h3>Đối với các yêu cầu chung</h3>
+    <p >- Vui lòng truy cập câu hỏi thường gặp của chúng tôi nếu bạn có thắc mắc về COVIDTODAY.
+    <br>- Nếu câu hỏi của bạn chưa được trả lời, vui lòng sử dụng danh sách bên dưới để liên hệ với chúng tôi. <br>
+    - COVIDTODAY cung cấp thông tin theo chính sách của mình về công bố thông tin. Chính sách này nhằm mục đích tăng lượng thông tin có sẵn và sẽ có hiệu lực dần dần trong khoảng thời gian hai năm.
+
+    Trụ sở của COVIDTODAY tại VIETNAM
+    Địa chỉ: 470 Trần Đại Nghĩa, Hòa Quý, Quận Ngũ Hành Sơn, Đà Nẵng
+    Điện thoại: 0335168023
+    </p>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <h4>THÔNG TIN LIÊN HỆ TẠI CÁC TRANG THÔNG TIN ĐỊA CHỈ Ở DƯỚI TRANG WEB</h4>
+</div>
+
+</body>
+</html>
