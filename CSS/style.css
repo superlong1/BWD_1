@@ -447,10 +447,22 @@ header{
 .add-left-side-bot{
 	display: grid;
 	grid-template-columns: 30% 70%;
+	margin: 10px;
 }
 
-.add-left-side-bot{
-	margin: 10px;
+.add-left-side-bot p{
+	padding: 10px;
+	border: 1px dashed; #000;
+}
+
+.detail-button{
+	text-decoration: none;
+	border-radius: 5px;
+	float: right;
+}
+
+.detail-button:hover{
+	border-bottom: 1px solid #000;
 }
 
 .add-left-side-bot .add-image img{
@@ -558,15 +570,49 @@ header{
 }
 
 .related-link{
-	flex: 50%;
-	margin: 10px;
-	display: grid;
-	grid-template-columns: 70% 30%;
+	display: none;
 }
 
 .something-else{
 	flex: 30%;
 	margin: 10px;
+}
+
+/*Responsive for the additional infomation*/
+
+.add-info{
+	padding: 20px;
+	margin: 10px;
+	width: 700px;
+}
+
+.add-ske{
+	display: block;
+}
+
+.add-right-side{
+	margin-top: 70px;
+	padding: 10px;
+	border-left: 1px solid #000;
+}
+
+.add-left-side .add-left-side-top{
+	display: none;
+}
+
+.detail-button{
+	text-decoration: none;
+	border-radius: 5px;
+	float: right;
+}
+
+.detail-button:hover{
+	border-bottom: 1px solid #000;
+}
+
+.add-left-side-bot .add-image img{
+	width: 100%;
+	display: block;
 }
 
 }
@@ -604,25 +650,22 @@ header{
 	margin-bottom: 70px;
 	width: 100%;
 	}
-
-	.intro{
+/*
+	intro part
+*/
+.intro{
 	margin: 10px;
 	padding: 10px;
 	width: 1000px;
-	}
+}
 
 .intro-content{
-		display: grid;
-		grid-template-columns: 50% 50%;
-	}
-	
-.intro-content-founder{
-	display: flex;
+	display: block;
 }
 
 .founder-info p{
 	display: none;
-	}
+}
 /*Responsvive chart part*/
 .statistic{
 	margin: 10px;
@@ -664,14 +707,51 @@ header{
 }
 
 .related-link{
-	flex: 50%;
+	flex: 35%;
 	margin: 10px;
 	display: grid;
-	grid-template-columns: 70% 30%;
+	grid-template-columns: 50% 50%;
 }
 
 .something-else{
 	flex: 30%;
 	margin: 10px;
+}
+/*
+	For the additional infomation part
+*/
+.add-info{
+	padding: 20px;
+	margin: 10px;
+	width: 1000px;
+}
+
+.add-ske{
+	display: block;
+}
+
+.add-right-side{
+	margin-top: 70px;
+	padding: 10px;
+	border-left: 1px solid #000;
+}
+
+.add-left-side .add-left-side-top{
+	display: none;
+}
+
+.detail-button{
+	text-decoration: none;
+	border-radius: 5px;
+	float: right;
+}
+
+.detail-button:hover{
+	border-bottom: 1px solid #000;
+}
+
+.add-left-side-bot .add-image img{
+	width: 100%;
+	display: block;
 }
 }
