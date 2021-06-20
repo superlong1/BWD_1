@@ -368,7 +368,7 @@ header{
 
 .add-info{
 	padding: 20px;
-	margin: 10px;
+	margin-bottom: 70px;
 }
 
 .add-ske{
@@ -452,7 +452,7 @@ header{
 
 .add-left-side-bot p{
 	padding: 10px;
-	border: 1px dashed; #000;
+	border: 1px dashed #000;
 }
 
 .detail-button{
