@@ -55,3 +55,5 @@ function drawChart1() {
   var chart = new google.visualization.PieChart(document.getElementById('chart1'));
   chart.draw(data, options);
 }
+
+/********************************************************************/
